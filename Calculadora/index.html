@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agora vai</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="" id="titulo">Calculadora</a>
+        <nav>
+            <ul id="menu">
+                <li><a href="">Modo</a></li>
+                <li><a href="">Portifólio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="calculadora">
+        <div id="resultado"></div>
+
+        <section id="pad">
+            <div id="num">
+                <button id="n1" onclick="inse('1')">01</button>
+                <button id="n2" onclick="inse('2')">02</button>
+                <button id="n3" onclick="inse('3')">03</button>
+                <button id="n4" onclick="inse('4')">04</button>
+                <button id="n5" onclick="inse('5')">05</button>
+                <button id="n6" onclick="inse('6')">06</button>
+                <button id="n7" onclick="inse('7')">07</button>
+                <button id="n8" onclick="inse('8')">08</button>
+                <button id="n9" onclick="inse('9')">09</button>
+                <button id="dot" onclick="inse('.')">.</button>
+                <button id="n0" onclick="inse('0')">0</button>
+                <button id="equal" class="ope" onclick="resul()">=</button>
+            </div>
+
+            <div id="op">
+                <button id="mais" onclick="inse('+')">+</button>
+                <button id="menos" onclick="inse('-')">-</button>
+                <button id="vezes" onclick="inse('*')">&times;</button>
+                <button id="div" onclick="inse('/')">&#247;</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="imc">
+        <div id="result"></div>
+
+        <section id="formu">
+                <input type="number" name="" id="kl" placeholder="Seu Peso">
+                <button id="peso" class="bni">kl</button>
+                
+                <input type="number" name="" id="altura" placeholder="Sua Altura">
+                <button id="altura" class="bni">m</button>
+                
+                <button id="calcula" onclick="calcula()" >Calcular</button>
+        </section>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
