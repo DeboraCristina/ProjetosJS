@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 id='title'>TIC-TAC-TOE</h1>
+        <a href="#">Mais Projetos</a>
+    </header>
+
+    <section id="base">
+        <a id="01" class='ativo' href="#" onclick="apertou('01')"></a>
+        <a id="02" href="#" onclick="apertou('02')"></a>
+        <a id="03" href="#" onclick="apertou('03')">3</a>
+        <a id="04" href="#" onclick="apertou('04')">4</a>
+        <a id="05" href="#" onclick="apertou('05')">5</a>
+        <a id="06" href="#" onclick="apertou('06')">6</a>
+        <a id="07" href="#" onclick="apertou('07')">7</a>
+        <a id="08" href="#" onclick="apertou('08')">8</a>
+        <a id="09" href="#" onclick="apertou('09')">9</a>
+    </section>
+
+    <div id='itens'>
+        <section id="placar">
+            <div>
+                <p>VELHA:</p>
+                <p id='v'>0</p>
+            </div>
+            <div>
+                <p>O:</p>
+                <p id='o'>0</p>
+            </div>
+            <div>
+                <p>X:</p>
+                <p id='x'>0</p>
+            </div>
+        </section>
+
+        <a id="denovo" href="#" onclick="agin()">Jogar Novamente</a>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>

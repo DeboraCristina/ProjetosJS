@@ -1,0 +1,143 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+}
+body{
+    background-color:#333;
+}
+body{
+    background: linear-gradient(130deg, #00007e, #830005) no-repeat;
+    background-size: 300% 300%;
+    height: 100vh;
+    animation: fundo 60s ease infinite;
+    color:white;
+}
+@keyframes fundo{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+a{
+    text-decoration:none;
+    color:white;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    background-color:transparent;
+    padding:10px;
+    margin-bottom:50px;
+}
+header:hover{
+    background-color:rgba(255,0,200,.2);
+}
+header h1{
+    flex-grow:1;
+    text-align:center;
+}
+header a{
+    padding:8px;
+    background-color:rgba(255,0,200,.7);
+}
+header a:hover{
+    background-color:rgb(255,0,200);
+}
+#base{
+    background-color:rgba(255,255,255,.7);
+    border-radius:10px 10px 0 10px;
+    width:400px;
+    height:400px;
+    padding:10px;
+    margin:auto;
+    display:grid;
+    grid-gap:10px;
+    grid-template-columns:1fr 1fr 1fr;
+    position:relative;
+}
+#base a{
+    background-color:#003;
+    border-radius:10px;
+    font-size:70pt;
+    text-align:center;
+    color:transparent;
+    transition:.3s ease-in-out;
+}
+#base a.ativo{
+    color:orange;
+}
+#base a:hover{
+    background-color:#004;
+}
+
+#itens{
+    display:flex;
+}
+
+#placar{
+    position:absolute;
+    top: 50px;
+    background-color:transparent;
+    margin: 50px 0 0 40px;
+    width:100px;
+    padding:20px;
+    border-radius:0 40px 40px 40px;
+    font-size:11pt;
+    animation: placar 3s ease-in-out infinite;
+    box-shadow: 0 0 9px rgba(255, 255, 255, .5);
+}
+#placar div{
+    display:flex;
+}
+#placar div p{
+    margin-left:7px;
+}
+@keyframes placar{
+    0%{
+        top: 60px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 60px;
+    }
+}
+
+#denovo{
+    position:absolute;
+    top: -250px;
+    margin-left: 50px;
+    display:block;
+    padding: 10px;
+    background-color:pink;
+    transition:1s ease-in-out;
+}
+#denovo.denovo{
+    top: 250px;
+}
+
+@media (max-width:830px){
+    #placar{
+        position:relative;
+        margin:auto;
+    }
+    #denovo{
+        position:relative;
+        visibility:hidden;
+        top:0;
+        width:150px;
+        margin: auto;
+    }
+    #denovo.denovo{
+        visibility:visible;
+        top:50px;
+    }
+}
